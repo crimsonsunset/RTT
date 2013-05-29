@@ -1,1 +1,0 @@
-ncftpput -u ratethattruck -p f00dFTW250! -R ftp.ratethattruck.com /wp-content/themes/responsive /Users/josephsangiorgio/Desktop/Versions/responsive/style.css
