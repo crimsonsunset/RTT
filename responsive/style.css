@@ -345,7 +345,6 @@ img {
 
 .ie8 img {
     height: auto;
-    width: auto\9;
 }
 
 .ie8 img.size-large {
@@ -1707,7 +1706,7 @@ form div {
 .top-menu li a {
     border-left: 1px solid #ccc;
     color: #333;
-    font-size: 11px;
+    font-size: 25px;
     padding: 0 4px 0 8px;
 }
 
@@ -1722,16 +1721,10 @@ form div {
 /* =Header Menu (Primary)
 -------------------------------------------------------------- */
 .menu {
-    background-color: #585858;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#585858), to(#3d3d3d));
-    background-image: -webkit-linear-gradient(top, #585858, #3d3d3d);
-    background-image: -moz-linear-gradient(top, #585858, #3d3d3d);
-    background-image: -ms-linear-gradient(top, #585858, #3d3d3d);
-    background-image: -o-linear-gradient(top, #585858, #3d3d3d);
-    background-image: linear-gradient(top, #585858, #3d3d3d);
+    background-color: #D94E41;
     clear: both;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#585858, endColorstr=#3d3d3d);
     margin: 0 auto;
+    border-radius: 12px;
 }
 
 .main-nav {
@@ -1818,43 +1811,49 @@ form div {
     width: auto;
 }
 
+/*TODO: main menu heading text */
 .menu a {
-    border-left: 1px solid #585858;
-    color: #fff;
+    border-left: 1px solid #F2F0F1;
+    color: #F2F0F1;
     cursor: pointer;
     display: block;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 700;
     height: 45px;
     line-height: 45px;
     margin: 0;
     padding: 0 0.9em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-shadow: 0 1px 0 #262626;
     position: relative;
     text-decoration: none;
-    text-shadow: 0 -1px 0 #000;
-    white-space: nowrap;
+    font-family: 'Doppio One', serif;
 }
 
 .menu a:hover {
-    background-color: #808080;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#808080), to(#363636));
-    background-image: -webkit-linear-gradient(top, #808080, #363636);
-    background-image: -moz-linear-gradient(top, #808080, #363636);
-    background-image: -ms-linear-gradient(top, #808080, #363636);
-    background-image: -o-linear-gradient(top, #808080, #363636);
-    background-image: linear-gradient(top, #808080, #363636);
-    color: #fff;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#808080, endColorstr=#363636);
+    background-color: #F2F0F1;
+    color: #D94E41;
+    /*background-image: -webkit-gradient(linear, left top, left bottom, from(#808080), to(#363636));*/
+    /*background-image: -webkit-linear-gradient(top, #808080, #363636);*/
+    /*background-image: -moz-linear-gradient(top, #808080, #363636);*/
+    /*background-image: -ms-linear-gradient(top, #808080, #363636);*/
+    /*background-image: -o-linear-gradient(top, #808080, #363636);*/
+    /*background-image: linear-gradient(top, #808080, #363636);*/
+    /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#808080, endColorstr=#363636);*/
+    /*color: #fff;*/
 }
 
 ul.menu > li:hover {
     background-color: #363636;
-    color: #fff;
+    color: #F2F0F1;
+    border-radius: 12px 0px 0px 12px; /* top left, top right, bottom right, bottom left */
 }
 
 .menu .current_page_item a,
 .menu .current-menu-item a {
-    background-color: #343434;
+    background-color: #5F5E5C;
 }
 
 .front-page .menu .current_page_item a {
@@ -1944,7 +1943,7 @@ ul.menu > li:hover {
 }
 
 .sb-holder {
-    background-color: #3d3d3d;
+    background-color: #D94E41;
     display: none;
     height: 30px;
     margin: 0 auto;
@@ -2170,7 +2169,6 @@ ul.menu > li:hover {
 }
 
 .sub-header-menu a:hover {
-    -moz-background-clip: padding;
     -webkit-background-clip: padding-box;
     background-color: #f9f9f9;
     background-clip: padding-box;
@@ -2870,6 +2868,7 @@ only screen and (min-device-pixel-ratio:1.5) {
 
 }
 
+/*TODO: Mobile menu stuff*/
 @media screen and (max-width: 650px) {
 
     body {}
@@ -2908,15 +2907,15 @@ only screen and (min-device-pixel-ratio:1.5) {
     .js .main-nav {
         position: relative;
         height: 30px;
-        background-color: #585858;
-        background-image: -webkit-gradient(linear, left top, left bottom, from(#585858), to(#3d3d3d));
-        background-image: -webkit-linear-gradient(top, #585858, #3d3d3d);
-        background-image: -moz-linear-gradient(top, #585858, #3d3d3d);
-        background-image: -ms-linear-gradient(top, #585858, #3d3d3d);
-        background-image: -o-linear-gradient(top, #585858, #3d3d3d);
-        background-image: linear-gradient(top, #585858, #3d3d3d);
+        background-color: #D94E41;
+        /*background-image: -webkit-gradient(linear, left top, left bottom, from(#5F5E5C), to(#D94E41));*/
+        /*background-image: -webkit-linear-gradient(top, #5F5E5C, #D94E41);*/
+        /*background-image: -moz-linear-gradient(top, #5F5E5C, #D94E41);*/
+        /*background-image: -ms-linear-gradient(top, #5F5E5C, #D94E41);*/
+        /*background-image: -o-linear-gradient(top, #5F5E5C, #D94E41);*/
+        /*background-image: linear-gradient(top, #5F5E5C, #D94E41);*/
+        /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#5F5E5C, endColorstr=#D94E41);*/
         clear: both;
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#585858, endColorstr=#3d3d3d);
         margin: 0 auto;
     }
 
@@ -2925,6 +2924,7 @@ only screen and (min-device-pixel-ratio:1.5) {
         position: absolute;
         width: 100%;
         top: 30px;
+        border-radius: 5px;
         z-index: 1000;
     }
 
@@ -2934,12 +2934,14 @@ only screen and (min-device-pixel-ratio:1.5) {
 
     .js .main-nav .menu li {
         float: none;
-        background-color: #fff;
+        width: 100%;
+        background-color: #f1e8e7;
         border: none;
     }
 
+    /*TODO: mobile non selected items*/
     .js .main-nav .menu li a {
-        color: #444;
+        color: #262626;
         font-size: 13px;
         font-weight: normal;
         height: 45px;
@@ -2952,10 +2954,12 @@ only screen and (min-device-pixel-ratio:1.5) {
         cursor: pointer;
     }
 
-    .js .main-nav .menu li.current_page_item,
-    .js .menu .current_page_item a,
+    .js .main-nav .menu li.current_page_item{
+        color: #F2F0F1;
+    }
+
     .js .menu .current-menu-item a {
-        background-color: #f5f5f5;
+        color: #F2F0F1;
     }
 
     .js .main-nav .menu li li:hover {
@@ -2965,11 +2969,26 @@ only screen and (min-device-pixel-ratio:1.5) {
     .js .main-nav .menu li li a {
         position: relative;
         padding: 0 10px 0 30px;
+        color: #F2F0F1;
     }
 
     .js .main-nav .menu li li li a {
         position: relative;
         padding: 0 10px 0 40px;
+        border-left: 1px solid #F2F0F1;
+        color: #F2F0F1;
+        cursor: pointer;
+        display: block;
+        font-size: 15px;
+        font-weight: 700;
+        height: 45px;
+        line-height: 45px;
+        margin: 0;
+        text-shadow: 0 1px 0 #262626;
+        position: relative;
+        text-decoration: none;
+        font-family: 'Doppio One', serif;
+        white-space: nowrap;
     }
 
     .js .main-nav .menu li a:hover,
@@ -3013,7 +3032,7 @@ only screen and (min-device-pixel-ratio:1.5) {
     .js .main-nav #responsive_current_menu_item {
         display: block;
         padding: 5px 40px 5px 10px;
-        color: #fff;
+        color: #F2F0F1;
         font-weight: 700;
         cursor: pointer;
     }
@@ -3033,7 +3052,9 @@ only screen and (min-device-pixel-ratio:1.5) {
     .js .main-nav a#responsive_menu_button.responsive-toggle-open {
         background: url('images/select-icons.png') 0 -46px no-repeat;
     }
-
+    .js .menu .current_page_item a{
+        color: #F2F0F1;
+    }
 
     .top-menu,
     .footer-menu li {
