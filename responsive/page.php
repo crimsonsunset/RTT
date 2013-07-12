@@ -3,10 +3,11 @@
 // Exit if accessed directly
 if ( !defined('ABSPATH')) exit;
 
-/**
- * Pages Template
- *
- *
+
+
+/*
+    Template Name: Page
+
  * @file           page.php
  * @package        Responsive 
  * @author         Emil Uzelac 

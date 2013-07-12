@@ -18,6 +18,8 @@ if ( !defined('ABSPATH')) exit;
  */
 ?>
 
+
+
 <h1 class="entry-title post-title"><?php the_title(); ?></h1>
 
 <?php if ( comments_open() ) : ?>               

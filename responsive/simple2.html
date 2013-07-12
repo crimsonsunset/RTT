@@ -1,0 +1,107 @@
+
+<html>
+<head>
+
+    <style>
+        body{
+            height:2000px;
+        }
+        #sidebar{
+            float:left;
+        }
+        #catcher, #sticky, #footer{
+            width:200px; height:400px;
+            border:1px solid #000;
+            margin:5px;
+        }
+
+        #content{
+            float:right;
+        }
+    </style>
+
+</head>
+
+<body>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        function isScrolledTo(elem) {
+            var docViewTop = $(window).scrollTop(); //num of pixels hidden above current screen
+            var docViewBottom = docViewTop + $(window).height();
+
+            var elemTop = $(elem).offset().top; //num of pixels above the elem
+            var elemBottom = elemTop + $(elem).height();
+
+            return ((elemTop <= docViewTop));
+        }
+
+        var catcher = $('#catcher');
+        var sticky = $('#sticky');
+        var footer = $('#footer');
+
+        $(window).scroll(function() {
+            if(isScrolledTo(sticky) |! isScrolledTo(footer)) { // stick to window
+                sticky.css('position','fixed');
+                sticky.css('top','0px');
+            }
+            var topStopHeight = catcher.offset().top + catcher.height();
+            if ( topStopHeight > sticky.offset().top) { // stick back to top
+                sticky.css('position','absolute');
+                sticky.css('top', topStopHeight);
+            }
+            var bottomStopHeight = footer.offset().top;
+            if ( bottomStopHeight < sticky.offset().top + sticky.height()) { // stop above footer
+                sticky.css('position','absolute');
+                sticky.css('top', bottomStopHeight - sticky.outerHeight() - 000); // a bit of padding
+            }
+        });
+    });
+</script>
+<div id="sidebar">
+    <div id="catcher">
+        This is the "catcher" <code>div</code>
+    </div>
+
+    <div id="sticky">
+        This is the "sticky" <code>div</code>
+    </div>
+
+    <br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br />
+
+    <div id="footer">
+        This is the "footer" <code>div</code>
+    </div>
+</div>
+
+<div id="content">
+    Content <br /><br /><br /><br /><br /><br /><br /><br />
+    Content <br /><br /><br /><br /><br /><br /><br /><br />
+    Content <br /><br /><br /><br /><br /><br /><br /><br />
+    Content <br /><br /><br /><br /><br /><br /><br /><br />
+    Content <br /><br /><br /><br /><br /><br /><br /><br />
+    Content <br /><br /><br /><br /><br /><br /><br /><br />
+    Content <br /><br /><br /><br /><br /><br /><br /><br />
+    Content <br /><br /><br /><br /><br /><br /><br /><br />
+    Content <br /><br /><br /><br /><br /><br /><br /><br />
+    Content <br /><br /><br /><br /><br /><br /><br /><br />
+    Content <br /><br /><br /><br /><br /><br /><br /><br />
+    Content <br /><br /><br /><br /><br /><br /><br /><br />
+    Content <br /><br /><br /><br /><br /><br /><br /><br />
+    Content <br /><br /><br /><br /><br /><br /><br /><br />
+    Content <br /><br /><br /><br /><br /><br /><br /><br />
+    Content <br /><br /><br /><br /><br /><br /><br /><br />
+</div>
+
+</body>
+</html>

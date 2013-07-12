@@ -287,7 +287,8 @@ sub {
 }
 
 .col-620 {
-    width: 65.957446808511%;
+    /*TODO: This is the line that messed up full width on landing page*/
+    /*width: 65.957446808511%;*/
 }
 
 .col-700 {
@@ -374,15 +375,15 @@ svg:not(:root) {
 /* =Links
 -------------------------------------------------------------- */
 a {
-    color: #06c;
-    font-weight: 400;
+    color: #9AD9CD;
+    font-weight: bold;
     text-decoration: none;
 }
 
 a:hover,
 a:focus,
 a:active {
-    color: #444;
+    color: #D94E41;
     outline: 0;
     text-decoration: none;
 }
@@ -1118,7 +1119,7 @@ blockquote p {
 
 /* =Headings
 -------------------------------------------------------------- */
-h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+h1, h2, h3, h4, h5, h6, h2 a, h3 a, h4 a, h5 a, h6 a {
     font-weight: 700;
     line-height: 1.0em;
     word-wrap: break-word;
@@ -1128,6 +1129,36 @@ h1 {
     font-size: 2.625em; /* = 42px */
     margin-bottom: .5em;
     margin-top: .5em;
+}
+
+/*TODO: this is the titles of posts*/
+h1 a {
+    color: #D94E41;
+    font-weight:bold;
+
+    font-style: normal;
+    text-shadow:
+        0 1px 0px #5F5E5C,
+        1px 0 0px #5F5E3d,
+        1px 2px 1px #5F5E5C,
+        2px 1px 1px #5F5E3d,
+        2px 3px 2px #5F5E5C,
+        3px 2px 2px #5F5E3d,
+        3px 4px 2px #5F5E5C;
+}
+h1 a:hover {
+    color: #5F5E5C;
+    font-weight:bold;
+
+    font-style: normal;
+    text-shadow:
+        0 1px 0px #D94E41,
+        1px 0 0px #D94E41,
+        1px 2px 1px #D94E41,
+        2px 1px 1px #D94E41,
+        2px 3px 2px #D94E41,
+        3px 2px 2px #D94E41,
+        3px 4px 2px #D94E41;
 }
 
 h2 {
@@ -1291,8 +1322,10 @@ form div {
 /* =Header
 -------------------------------------------------------------- */
 #logo {
-    float: left;
-    margin: 0;
+    /*float: left;*/
+    /*margin: 0;*/
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .site-name {
@@ -1484,6 +1517,16 @@ form div {
     clear: both;
     text-align: center;
 }
+
+/*h1.a.entry-title post-title:link { color: blue; }*/
+/*h1.a.entry-title post-title:visited { color: purple; }*/
+/*h1.a.entry-title post-title:hover { color: green; }*/
+
+a.post-title:link {color: #ff0000; background: #ffffff; font-style: italic;}
+a.post-title:active {color: #ff0000; background: #ffffff; font-style: italic;}
+a.post-title:visited {color: #ff0000; background: #ffffff; font-style: italic;}
+a.post-title:hover {color: #ff0000; background: #ffffff; font-style: normal;}
+
 
 /* =bbPress
     bbPress has its own breadcrumb lists
@@ -1681,7 +1724,7 @@ form div {
     color: #933;
 }
 
-/* =404 Page 
+/* =404 Page
 -------------------------------------------------------------- */
 .error404 select,
 .error404 input[type="text"],
@@ -2599,7 +2642,7 @@ img.wp-smiley {
     display: block;
 }
 
-/* =Post Thumbnails 
+/* =Post Thumbnails
 -------------------------------------------------------------- */
 img.wp-post-image,
 img.attachment-full,

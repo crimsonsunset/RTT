@@ -1,5 +1,8 @@
 <?php
 
+//for the grid
+//include(WP_CONTENT_DIR . '/themes/responsive/myGrid.php');
+
 // Exit if accessed directly
 if ( !defined('ABSPATH')) exit;
 

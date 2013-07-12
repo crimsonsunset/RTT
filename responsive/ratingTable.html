@@ -1,0 +1,231 @@
+<html>
+<head>
+
+<!-- Demo styling -->
+<link href="js/css/jq.css" rel="stylesheet">
+
+<!-- Pick a theme, load the plugin & initialize plugin -->
+<link href="js/css/theme.default.css" rel="stylesheet">
+
+
+<!-- load jQuery and tablesorter scripts -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+
+<!-- tablesorter widgets (optional) -->
+<script type="text/javascript" src="js/jquery.tablesorter.widgets.min.js"></script>
+<script>
+    $(function(){
+
+        var sort_by = function (field, reverse, primer) {
+            var key = function (x) {
+                return primer ? primer(x[field]) : x[field]
+            };
+            return function (a, b) {
+                var A = key(a), B = key(b);
+                //alert(A + " , " + B)
+                return ((A < B) ? -1 :
+                        (A > B) ? +1 : 0) * [-1, 1][+!!reverse];
+            }
+        };
+
+        function encode_utf8(s) {
+            return unescape(encodeURIComponent(s));
+        }
+
+        function decode_utf8(s) {
+            return decodeURIComponent(escape(s));
+        }
+
+        var allTrucks = (function () {
+            var allTrucks = {
+                    },
+                    privateVariable = 1;
+            allTrucks.propArr = [
+                {
+                    "name": "Diso's",
+                    "score": -1,
+                    "ranking": -1,
+                    "cuisine": "Italian",
+                    "date": "6/28/13",
+                    "url": "http://www.disosnyc.com/",
+                    "breakdown": [4, 4, 3.25, 4.5]
+                },
+                {
+                    "name": "Fishing Shrimp",
+                    "score": -1,
+                    "ranking": -1,
+                    "cuisine": "Seafood",
+                    "date": "5/30/13",
+                    "url": "www.fishingshrimp.com",
+                    "breakdown": [4, 3.5, 3.5, 3]
+                },
+                {
+                    "name": "Milk Truck",
+                    "score": -1,
+                    "ranking": -1,
+                    "cuisine": "American",
+                    "date": "6/7/13",
+                    "url": "http://www.milktrucknyc.com/",
+                    "breakdown": [3, 3, 2.5, 4.25]
+                },
+                {
+                    "name": "Mac Truck",
+                    "score": -1,
+                    "ranking": -1,
+                    "cuisine": "American",
+                    "date": "6/11/13",
+                    "url": "http://www.mactrucknyc.com/",
+                    "breakdown": [3, 3.25, 4, 4]
+                },
+                {
+                    "name": "Comme Ci Comme Ca",
+                    "score": -1,
+                    "ranking": -1,
+                    "cuisine": "Mediterranean",
+                    "date": "6/24/13",
+                    "url": "http://chefsamirtruck.com/",
+                    "breakdown": [4, 4, 3.25, 2.5]
+                },
+                {
+                    "name": "Taco Bite",
+                    "score": -1,
+                    "ranking": -1,
+                    "cuisine": "Mexican",
+                    "date": "6/29/13",
+                    "url": "http://tacobite.com/",
+                    "breakdown": [1, 4, 4, 4]
+                }
+            ]
+            //0truck/service , 1portion/presentation, 2price, 3food
+            calcMainScores = function () {
+                for (var i = 0; i < allTrucks.propArr.length; i++) {
+                    console.log("-------------------------")
+                    var currTotal = 0;
+                    for (var j = 0; j < allTrucks.propArr[i].breakdown.length; j++) {
+
+//                        food - 4 price - 3 truck/service - 2 portion/presentation - 1
+                        switch (j) {
+                            case 0:
+                                console.log('truck-service')
+                                currTotal += (2 * allTrucks.propArr[i].breakdown[j])
+                                break;
+                            case 1:
+                                console.log('por/pres')
+                                currTotal += (1 * allTrucks.propArr[i].breakdown[j])
+                                break;
+                            case 2:
+                                console.log('tr/serv')
+                                currTotal += (3 * allTrucks.propArr[i].breakdown[j])
+                                break;
+                            case 3:
+                                console.log('food')
+                                currTotal += (4 * allTrucks.propArr[i].breakdown[j])
+                                break;
+                            default:
+                                console.log('break o clock')
+                        }
+
+
+                    }
+//                    console.log(currTotal/10)
+                    currTotal = currTotal / 10
+                    currTotal = Math.round(currTotal * 100) / 100;
+                    console.log(currTotal)
+                    allTrucks.propArr[i].score = currTotal;
+                }
+            };
+            calcRanks = function () {
+
+                allTrucks.propArr.sort(sort_by('score', false, function (a) {
+                    return a;
+                }));
+
+                for (var i = 0; i < allTrucks.propArr.length; i++) {
+                    allTrucks.propArr[i].ranking = i+1;
+                }
+
+                console.log(JSON.stringify(allTrucks.propArr))
+
+            };
+            allTrucks.main = function () {
+                calcMainScores();
+                calcRanks();
+            };
+            return allTrucks;
+        }());
+
+        function addRow2() {
+
+            allTrucks.main();
+            var tableBody = document.getElementsByTagName("TBODY").item(0);
+
+            if (!document.getElementsByTagName)
+                return;
+
+            for (var i = 0; i < allTrucks.propArr.length; i++) {
+
+                var row = document.createElement("TR");
+                var i;
+                for (j in allTrucks.propArr[i]) {
+                    var newNode;
+
+                    var newCell = document.createElement("TD");
+
+                    if (j == "url") {
+                        var a = document.createElement('a');
+                        newNode = document.createTextNode(allTrucks.propArr[i][j]);
+                        a.appendChild((newNode));
+                        a.title = allTrucks.propArr[i][j];
+                        a.href = allTrucks.propArr[i][j];
+                        a.target = "_blank";
+                        newCell.appendChild(a);
+
+                    } else if (Object.prototype.toString.call(allTrucks.propArr[i][j]) === '[object Array]') {
+                        continue
+                    }
+                    else {
+                        newNode = document.createTextNode(allTrucks.propArr[i][j]);
+                        newCell.appendChild(newNode);
+                    }
+                    row.appendChild(newCell);
+
+                }
+                tableBody.appendChild(row);
+            }
+        }
+        addRow2();
+
+
+        $('table').tablesorter({
+            widgets        : ['zebra', 'columns'],
+            usNumberFormat : false,
+            sortReset      : true,
+            sortList: [[1,1]]
+        });
+    });
+</script>
+
+
+    <script type="text/javascript">
+
+
+    </script>
+</head>
+<body>
+<table id="myTable" class="tablesorter">
+    <thead>
+    <tr>
+        <th>Truck Name</th>
+        <th>RTT Score</th>
+        <th>Ranking</th>
+        <th>Cuisine</th>
+        <th>Date Reviewed</th>
+        <th>Link</th>
+    </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+</body>
+</html>
