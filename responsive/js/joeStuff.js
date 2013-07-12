@@ -1,3 +1,14 @@
+var script = document.createElement('script');
+script.src = 'http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js';
+script.type = 'text/javascript';
+document.getElementsByTagName('head')[0].appendChild(script);
+
+
+var script2 = document.createElement('script');
+script2.src = "http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js";
+script2.type = 'text/javascript';
+document.getElementsByTagName('head')[0].appendChild(script2);
+
 
 // make console.log safe to use
 window.console || (console = {log: function () {
@@ -266,4 +277,4 @@ jRes.addFunc({
     }
 });
 
-
+console.log('loadedlibs')
