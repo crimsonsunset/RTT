@@ -34,7 +34,6 @@ get_header(); ?>
 
                 <?php get_template_part( 'post-meta' ); ?>
 
-                <div class="post-entry">
                     <?php the_content(__('Read more &#8250;', 'responsive')); ?>
                     
                     <?php if ( get_the_author_meta('description') != '' ) : ?>

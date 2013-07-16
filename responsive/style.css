@@ -228,6 +228,62 @@ sub {
     vertical-align: sub;
 }
 
+.rttScore {
+    color: #9AD9CD;
+    font-family: 'Chivo', sans-serif;
+    font-style: regular;
+    font-weight: 0;
+    font-size: 36px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: .11em;
+    word-spacing: .25em;
+    line-height: 1.4;
+    font-weight:lighter;
+
+    font-style: normal;
+    text-shadow:
+        0 1px 0px #5F5E5C,
+        1px 0 0px #5F5E3d,
+        1px 2px 1px #5F5E5C,
+        2px 1px 1px #5F5E3d;
+
+}
+div.rttScoreBox {
+
+    padding: 5px;
+    text-align: center;
+    /* fixed within viewport */
+    position:absolute;
+
+    /* set position */
+    top: -5px;
+    right: -40px;
+
+    /* must have dimension */
+    width: 22%;
+    height: 100px;
+
+    color: #D94E41;
+    font-family: 'Chivo', sans-serif;
+    font-style: regular;
+    font-weight: 0;
+    font-size: 36px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: .11em;
+    word-spacing: .25em;
+    line-height: 1.4;
+    font-weight:lighter;
+
+    font-style: normal;
+    text-shadow:
+        0 1px 0px #5F5E5C,
+        1px 0 0px #5F5E3d,
+        1px 2px 1px #5F5E5C,
+        2px 1px 1px #5F5E3d;
+}
+
 /* =Responsive 12 Column Grid
     http://themeid.com/responsive-grid/
 -------------------------------------------------------------- */
@@ -1131,34 +1187,37 @@ h1 {
     margin-top: .5em;
 }
 
+
 /*TODO: this is the titles of posts*/
 h1 a {
     color: #D94E41;
-    font-weight:bold;
+    font-family: 'Chivo', sans-serif;
+    font-style: regular;
+    font-weight: 10;
+    font-size: 36px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: .11em;
+    word-spacing: .25em;
+    line-height: 1.4;
+    font-weight:lighter;
 
     font-style: normal;
     text-shadow:
         0 1px 0px #5F5E5C,
         1px 0 0px #5F5E3d,
         1px 2px 1px #5F5E5C,
-        2px 1px 1px #5F5E3d,
-        2px 3px 2px #5F5E5C,
-        3px 2px 2px #5F5E3d,
-        3px 4px 2px #5F5E5C;
+        2px 1px 1px #5F5E3d;
 }
 h1 a:hover {
-    color: #5F5E5C;
+    color: #821E14;
     font-weight:bold;
-
     font-style: normal;
     text-shadow:
         0 1px 0px #D94E41,
         1px 0 0px #D94E41,
         1px 2px 1px #D94E41,
-        2px 1px 1px #D94E41,
-        2px 3px 2px #D94E41,
-        3px 2px 2px #D94E41,
-        3px 4px 2px #D94E41;
+        2px 1px 1px #D94E41;
 }
 
 h2 {
@@ -1488,6 +1547,7 @@ form div {
 
 .post-entry {
     clear: both;
+    position:relative;
 }
 
 .post-meta {
@@ -1860,7 +1920,7 @@ a.post-title:hover {color: #ff0000; background: #ffffff; font-style: normal;}
     color: #F2F0F1;
     cursor: pointer;
     display: block;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 700;
     height: 45px;
     line-height: 45px;
@@ -1872,7 +1932,7 @@ a.post-title:hover {color: #ff0000; background: #ffffff; font-style: normal;}
     text-shadow: 0 1px 0 #262626;
     position: relative;
     text-decoration: none;
-    font-family: 'Doppio One', serif;
+    font-family: 'Chivo-Black';
 }
 
 .menu a:hover {
@@ -3080,6 +3140,8 @@ only screen and (min-device-pixel-ratio:1.5) {
         cursor: pointer;
     }
 
+
+    /*TODO: this is the change for new folder structure*/
     .js .main-nav a#responsive_menu_button {
         position: absolute;
         display: block;
@@ -3088,13 +3150,14 @@ only screen and (min-device-pixel-ratio:1.5) {
         height: 30px;
         width: 23px;
         margin-left: -30px;
-        background: url('images/select-icons.png') 0 5px no-repeat;
+        background: url('../images/select-icons.png') 0 5px no-repeat;
         cursor: pointer;
     }
 
     .js .main-nav a#responsive_menu_button.responsive-toggle-open {
-        background: url('images/select-icons.png') 0 -46px no-repeat;
+        background: url('../images/select-icons.png') 0 -46px no-repeat;
     }
+
     .js .menu .current_page_item a{
         color: #F2F0F1;
     }

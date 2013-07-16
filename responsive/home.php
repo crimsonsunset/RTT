@@ -1,3 +1,5 @@
+<script type="text/javascript" src="/wp-content/themes/responsive/core/js/globalArrs.js"></script>
+
 <?php
 
 // Exit if accessed directly
@@ -32,16 +34,20 @@ $more = 0;
 
                 <?php responsive_entry_before(); ?>
                 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                    <?php responsive_entry_top(); ?>
 
+                    <?php responsive_entry_top(); ?>
+                    <div class="post-entry">
+                        <div class='rttScoreBox'>Score: <span class="rttScore">4.17</span>
+                        </div>
                     <?php get_template_part('post-meta'); ?>
 
-                    <div class="post-entry">
+
                         <?php if (has_post_thumbnail()) : ?>
                             <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
                                 <?php the_post_thumbnail(); ?>
                             </a>
                         <?php endif; ?>
+
                         <?php the_content(__('Read more &#8250;', 'responsive')); ?>
                         <?php wp_link_pages(array('before' => '<div class="pagination">' . __('Pages:', 'responsive'), 'after' => '</div>')); ?>
                     </div>
