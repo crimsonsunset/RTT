@@ -1,0 +1,46 @@
+<html>
+<head>
+    <style>
+        p {
+            margin: 20px 0 0
+        }
+
+        b {
+            color: blue;
+        }
+    </style>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+</head>
+<body>
+
+<div id="logo">
+    <a href="http://ratethattruck.com/"><img
+            src="http://ratethattruck.com/wp-content/uploads/2013/07/cropped-RTTfullSize.png" width="960" height="136"
+            alt="Rate That Truck"/>
+    </a>
+</div>
+
+<script>
+    //    $("input").change(function() {
+    //        var $input = $(this);
+    //        $("p").html(".attr('checked'): <b>" + $input.attr('checked') + "</b><br>"
+    //                + ".prop('checked'): <b>" + $input.prop('checked') + "</b><br>"
+    //                + ".is(':checked'): <b>" + $input.is(':checked') ) + "</b>";
+    //    }).change();
+
+    var d = "http://ratethattruck.com/wp-content/uploads/2013/07/RTTmidSize1.png"
+
+    function change() {
+
+        $('#logo a img').attr('src', d );
+//       $("div.logo").find("a").attr('src', d);
+        console.log('assas')
+
+    }
+
+    change();
+
+</script>
+
+</body>
+</html>

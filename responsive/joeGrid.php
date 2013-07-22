@@ -15,15 +15,10 @@ get_header(); ?>
     <link href="/wp-content/themes/responsive/core/js/css/theme.default.css" rel="stylesheet">
 
     <!-- load jQuery and tablesorter scripts -->
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    <script type="text/javascript" src="http:/ratethattruck.com/wp-content/themes/responsive/core/js/jquery.tablesorter.min.js"></script>
 
-    <!-- tablesorter widgets (optional) -->
-    <script type="text/javascript" src="http:/ratethattruck.com/wp-content/responsive/core/js/jquery.tablesorter.widgets.min.js"></script>
-    <script type="text/javascript" src="http:/ratethattruck.com/wp-content/responsive/core/js/globalArrs.js"></script>
 
     <script>
-    $(function(){
+    jQuery(function(){
 
         function addRow2() {
 
@@ -63,14 +58,59 @@ get_header(); ?>
                 tableBody.appendChild(row);
             }
         }
-        addRow2();
+        function addRowMobile() {
 
-        $('table').tablesorter({
+            allTrucks.main();
+            var tableBody = document.getElementsByTagName("TBODY").item(0);
+
+            if (!document.getElementsByTagName)
+                return;
+
+            for (var i = 0; i < allTrucks.propArr.length; i++) {
+                var row = document.createElement("TR");
+                var i;
+                for (j in allTrucks.propArr[i]) {
+                    var newNode;
+
+                    var newCell = document.createElement("TD");
+
+                    if (j == "url") {
+                        var a = document.createElement('a');
+                        newNode = document.createTextNode(allTrucks.propArr[i]['name']);
+                        a.appendChild((newNode));
+                        a.title = allTrucks.propArr[i]['name'];
+                        a.href = allTrucks.propArr[i][j];
+                        a.target = "_blank";
+                        newCell.appendChild(a);
+
+                    } else if (Object.prototype.toString.call(allTrucks.propArr[i][j]) === '[object Array]') {
+                        continue
+                    }
+                    else {
+                        newNode = document.createTextNode(allTrucks.propArr[i][j]);
+                        newCell.appendChild(newNode);
+                    }
+                    row.appendChild(newCell);
+
+                }
+                tableBody.appendChild(row);
+            }
+        }
+
+        if (jQuery(window).width() < 590) {
+            addRowMobile();
+
+        } else {
+            addRow2();
+        }
+
+        jQuery('table').tablesorter({
             widgets        : ['zebra', 'columns'],
-            usNumberFormat : false,
             sortReset      : true,
             sortList: [[0,0]]
         });
+
+
     });
     </script>
 

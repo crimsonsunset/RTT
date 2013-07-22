@@ -135,13 +135,13 @@ pre.normal {
 }
 
 #logo {
-    background: url(images/jq.png);
+    /*background: url(images/jq.png);*/
     display: block;
     float: right;
-    height: 31px;
+    /*height: 31px;*/
     margin-right: 10px;
     margin-top: 10px;
-    width: 110px;
+    /*width: 110px;*/
 }
 
 #main {

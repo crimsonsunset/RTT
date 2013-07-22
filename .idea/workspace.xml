@@ -2,17 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56314d58-6fde-4854-a124-3b49d9b6feb9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/responsive/asd.html" afterPath="$PROJECT_DIR$/responsive/asd.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/responsive/js/globalArrs.js" afterPath="$PROJECT_DIR$/responsive/js/globalArrs.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/responsive/home.php" afterPath="$PROJECT_DIR$/responsive/home.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/responsive/joeGrid.php" afterPath="$PROJECT_DIR$/responsive/joeGrid.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/responsive/single.php" afterPath="$PROJECT_DIR$/responsive/single.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/responsive/style.css" afterPath="$PROJECT_DIR$/responsive/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RTT.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="56314d58-6fde-4854-a124-3b49d9b6feb9" time="1373896742068" ignored="false" />
-    <file path="/a.dummy" changelist="56314d58-6fde-4854-a124-3b49d9b6feb9" time="1373919392583" ignored="false" />
+    <file path="/a.dummy" changelist="56314d58-6fde-4854-a124-3b49d9b6feb9" time="1373986094801" ignored="false" />
     <file path="/style.css" changelist="56314d58-6fde-4854-a124-3b49d9b6feb9" time="1373921283849" ignored="false" />
     <file path="/rtl.css" changelist="56314d58-6fde-4854-a124-3b49d9b6feb9" time="1369342472828" ignored="false" />
     <file path="$PROJECT_DIR$/../JJASD/TalkTrackPhaseTwo/TalkTrackPhaseTwo/JSON/ContentSpec.json" changelist="56314d58-6fde-4854-a124-3b49d9b6feb9" time="1369409176076" ignored="false" />
@@ -30,8 +28,8 @@
     <file path="/functions.php" changelist="56314d58-6fde-4854-a124-3b49d9b6feb9" time="1373652777606" ignored="false" />
     <file path="/responsive-plugins.js" changelist="56314d58-6fde-4854-a124-3b49d9b6feb9" time="1373653747776" ignored="false" />
     <file path="/joeStuff.js" changelist="56314d58-6fde-4854-a124-3b49d9b6feb9" time="1373654681009" ignored="false" />
-    <file path="/home.php" changelist="56314d58-6fde-4854-a124-3b49d9b6feb9" time="1373921572961" ignored="false" />
-    <file path="/globalArrs.js" changelist="56314d58-6fde-4854-a124-3b49d9b6feb9" time="1373984871005" ignored="false" />
+    <file path="/home.php" changelist="56314d58-6fde-4854-a124-3b49d9b6feb9" time="1373992076344" ignored="false" />
+    <file path="/globalArrs.js" changelist="56314d58-6fde-4854-a124-3b49d9b6feb9" time="1373992020377" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -549,7 +547,7 @@
           <file leaf-file-name="single.php" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/responsive/single.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="58" column="52" selection-start="2303" selection-end="2303" vertical-scroll-proportion="-17.0">
+                <state line="58" column="52" selection-start="2303" selection-end="2303" vertical-scroll-proportion="-23.875">
                   <folding />
                 </state>
               </provider>
@@ -558,10 +556,8 @@
           <file leaf-file-name="globalArrs.js" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/responsive/js/globalArrs.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="36" column="46" selection-start="991" selection-end="991" vertical-scroll-proportion="0.6242775">
-                  <folding>
-                    <element signature="e#4918#5242#0" expanded="false" />
-                  </folding>
+                <state line="104" column="26" selection-start="3458" selection-end="3458" vertical-scroll-proportion="0.9642432">
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -573,19 +569,19 @@
           <file leaf-file-name="joeGrid.php" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/responsive/joeGrid.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="22" column="0" selection-start="852" selection-end="971" vertical-scroll-proportion="-6.0">
+                <state line="136" column="22" selection-start="4740" selection-end="4740" vertical-scroll-proportion="-10.5">
                   <folding>
                     <element signature="e#69#101#0" expanded="false" />
-                    <element signature="e#1031#2446#0" expanded="false" />
-                    <element signature="e#1277#2436#0" expanded="false" />
-                    <element signature="e#1406#2378#0" expanded="false" />
-                    <element signature="e#1543#1982#0" expanded="false" />
-                    <element signature="e#2070#2126#0" expanded="false" />
-                    <element signature="e#2152#2313#0" expanded="false" />
-                    <element signature="e#2498#2661#0" expanded="false" />
+                    <element signature="e#977#2392#0" expanded="false" />
+                    <element signature="e#1223#2382#0" expanded="false" />
+                    <element signature="e#1352#2324#0" expanded="false" />
+                    <element signature="e#1489#1928#0" expanded="false" />
+                    <element signature="e#2016#2072#0" expanded="false" />
+                    <element signature="e#2098#2259#0" expanded="false" />
+                    <element signature="e#2444#2607#0" expanded="false" />
                     <element signature="tag#div#0" expanded="false" />
-                    <element signature="e#2751#4718#0" expanded="false" />
-                    <element signature="e#2793#4589#0" expanded="false" />
+                    <element signature="e#2697#4664#0" expanded="false" />
+                    <element signature="e#2739#4535#0" expanded="false" />
                     <element signature="tag#div#0;tag#div#0" expanded="false" />
                     <element signature="tag#div#0;tag#div#0;tag#div#0" expanded="false" />
                     <element signature="tag#body#0;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
@@ -593,7 +589,7 @@
                     <element signature="tag#thead#0;tag#table#0;tag#body#0;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
                     <element signature="tag#tr#0;tag#thead#0;tag#table#0;tag#body#0;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
                     <element signature="tag#tbody#0;tag#table#0;tag#body#0;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
-                    <element signature="e#4645#4702#0" expanded="false" />
+                    <element signature="e#4591#4648#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -1104,7 +1100,7 @@
           <file leaf-file-name="home.php" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/responsive/home.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="0" selection-start="0" selection-end="99" vertical-scroll-proportion="0.0">
+                <state line="41" column="87" selection-start="1264" selection-end="1264" vertical-scroll-proportion="0.3640898">
                   <folding />
                 </state>
               </provider>
@@ -1113,7 +1109,7 @@
           <file leaf-file-name="post-meta.php" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/responsive/post-meta.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="24" column="132" selection-start="720" selection-end="720" vertical-scroll-proportion="-15.0">
+                <state line="11" column="30" selection-start="211" selection-end="211" vertical-scroll-proportion="-6.875">
                   <folding />
                 </state>
               </provider>
@@ -1249,7 +1245,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="preferences.keymap" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../templateApp/templateApp" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="options.searchVisible" value="true" />
@@ -1384,13 +1380,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/responsive/includes/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="796" column="65" selection-start="30347" selection-end="30347" vertical-scroll-proportion="0.14387634">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/responsive/header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="76" selection-start="612" selection-end="612" vertical-scroll-proportion="0.01783591">
@@ -1736,53 +1725,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/responsive/single.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="52" selection-start="2303" selection-end="2303" vertical-scroll-proportion="-17.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/responsive/js/globalArrs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="46" selection-start="991" selection-end="991" vertical-scroll-proportion="0.6242775">
-          <folding>
-            <element signature="e#4918#5242#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/responsive/asd.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="10" selection-start="120" selection-end="120" vertical-scroll-proportion="-2.5">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/responsive/joeGrid.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="852" selection-end="971" vertical-scroll-proportion="-6.0">
-          <folding>
-            <element signature="e#69#101#0" expanded="false" />
-            <element signature="e#1031#2446#0" expanded="false" />
-            <element signature="e#1277#2436#0" expanded="false" />
-            <element signature="e#1406#2378#0" expanded="false" />
-            <element signature="e#1543#1982#0" expanded="false" />
-            <element signature="e#2070#2126#0" expanded="false" />
-            <element signature="e#2152#2313#0" expanded="false" />
-            <element signature="e#2498#2661#0" expanded="false" />
-            <element signature="tag#div#0" expanded="false" />
-            <element signature="e#2751#4718#0" expanded="false" />
-            <element signature="e#2793#4589#0" expanded="false" />
-            <element signature="tag#div#0;tag#div#0" expanded="false" />
-            <element signature="tag#div#0;tag#div#0;tag#div#0" expanded="false" />
-            <element signature="tag#body#0;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
-            <element signature="tag#table#0;tag#body#0;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
-            <element signature="tag#thead#0;tag#table#0;tag#body#0;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
-            <element signature="tag#tr#0;tag#thead#0;tag#table#0;tag#body#0;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
-            <element signature="tag#tbody#0;tag#table#0;tag#body#0;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
-            <element signature="e#4645#4702#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2277,16 +2223,195 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../../trunkErivedge/selection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="667" column="0" selection-start="20842" selection-end="20842" vertical-scroll-proportion="0.6880734">
+          <folding>
+            <element signature="e#174#13069#0" expanded="false" />
+            <element signature="e#211#533#0" expanded="false" />
+            <element signature="e#551#775#0" expanded="false" />
+            <element signature="e#867#912#0" expanded="false" />
+            <element signature="e#1133#2089#0" expanded="false" />
+            <element signature="e#1294#1330#0" expanded="false" />
+            <element signature="e#1336#1347#0" expanded="false" />
+            <element signature="e#1373#1413#0" expanded="false" />
+            <element signature="e#1419#1430#0" expanded="false" />
+            <element signature="e#1557#1775#0" expanded="false" />
+            <element signature="e#1781#1997#0" expanded="false" />
+            <element signature="e#2123#2726#0" expanded="false" />
+            <element signature="e#2275#2305#0" expanded="false" />
+            <element signature="e#2311#2720#0" expanded="false" />
+            <element signature="e#2430#2710#0" expanded="false" />
+            <element signature="e#2467#2694#0" expanded="false" />
+            <element signature="e#2489#2676#0" expanded="false" />
+            <element signature="e#2763#3364#0" expanded="false" />
+            <element signature="e#2832#2907#0" expanded="false" />
+            <element signature="e#2913#3328#0" expanded="false" />
+            <element signature="e#3037#3318#0" expanded="false" />
+            <element signature="e#3074#3302#0" expanded="false" />
+            <element signature="e#3096#3284#0" expanded="false" />
+            <element signature="e#3390#4015#0" expanded="false" />
+            <element signature="e#3498#3991#0" expanded="false" />
+            <element signature="e#3997#4009#0" expanded="false" />
+            <element signature="e#4048#4821#0" expanded="false" />
+            <element signature="e#4158#4812#0" expanded="false" />
+            <element signature="e#4172#4802#0" expanded="false" />
+            <element signature="e#4282#4788#0" expanded="false" />
+            <element signature="e#4392#4770#0" expanded="false" />
+            <element signature="e#4418#4748#0" expanded="false" />
+            <element signature="e#4614#4722#0" expanded="false" />
+            <element signature="e#4854#7273#0" expanded="false" />
+            <element signature="e#4945#7116#0" expanded="false" />
+            <element signature="e#4979#7104#0" expanded="false" />
+            <element signature="e#5362#7090#0" expanded="false" />
+            <element signature="e#5384#6360#0" expanded="false" />
+            <element signature="e#5922#6338#0" expanded="false" />
+            <element signature="e#5952#6312#0" expanded="false" />
+            <element signature="e#6170#6282#0" expanded="false" />
+            <element signature="e#6382#7072#0" expanded="false" />
+            <element signature="e#7304#7654#0" expanded="false" />
+            <element signature="e#7334#7628#0" expanded="false" />
+            <element signature="e#7368#7579#0" expanded="false" />
+            <element signature="e#7634#7646#0" expanded="false" />
+            <element signature="e#7686#7790#0" expanded="false" />
+            <element signature="e#7815#13066#0" expanded="false" />
+            <element signature="e#7844#7935#0" expanded="false" />
+            <element signature="e#8101#8178#0" expanded="false" />
+            <element signature="e#8201#8473#0" expanded="false" />
+            <element signature="e#8234#8442#0" expanded="false" />
+            <element signature="e#8479#8490#0" expanded="false" />
+            <element signature="e#8522#8590#0" expanded="false" />
+            <element signature="e#8596#8868#0" expanded="false" />
+            <element signature="e#8629#8837#0" expanded="false" />
+            <element signature="e#8960#9416#0" expanded="false" />
+            <element signature="e#9422#9433#0" expanded="false" />
+            <element signature="e#9466#9860#0" expanded="false" />
+            <element signature="e#9866#9995#0" expanded="false" />
+            <element signature="e#10005#10049#0" expanded="false" />
+            <element signature="e#10249#10637#0" expanded="false" />
+            <element signature="e#10336#10408#0" expanded="false" />
+            <element signature="e#10441#10562#0" expanded="false" />
+            <element signature="e#10568#10626#0" expanded="false" />
+            <element signature="e#10643#10958#0" expanded="false" />
+            <element signature="e#10968#10995#0" expanded="false" />
+            <element signature="e#11074#11476#0" expanded="false" />
+            <element signature="e#11160#11466#0" expanded="false" />
+            <element signature="e#11178#11452#0" expanded="false" />
+            <element signature="e#11342#11434#0" expanded="false" />
+            <element signature="e#11494#13032#0" expanded="false" />
+            <element signature="e#11589#11640#0" expanded="false" />
+            <element signature="e#11996#13022#0" expanded="false" />
+            <element signature="e#12014#12325#0" expanded="false" />
+            <element signature="e#12174#12307#0" expanded="false" />
+            <element signature="e#12216#12285#0" expanded="false" />
+            <element signature="e#12343#12607#0" expanded="false" />
+            <element signature="e#12513#12589#0" expanded="false" />
+            <element signature="e#12625#12805#0" expanded="false" />
+            <element signature="e#12823#13008#0" expanded="false" />
+            <element signature="e#13098#13196#0" expanded="false" />
+            <element signature="e#13157#13193#0" expanded="false" />
+            <element signature="e#13240#13648#0" expanded="false" />
+            <element signature="e#13461#13584#0" expanded="false" />
+            <element signature="e#13543#13578#0" expanded="false" />
+            <element signature="e#13650#13675#0" expanded="false" />
+            <element signature="e#15162#17304#0" expanded="false" />
+            <element signature="e#15235#15261#0" expanded="false" />
+            <element signature="e#15379#15600#0" expanded="false" />
+            <element signature="e#15606#15614#0" expanded="false" />
+            <element signature="e#15853#15884#0" expanded="false" />
+            <element signature="e#15959#16081#0" expanded="false" />
+            <element signature="e#16144#16257#0" expanded="false" />
+            <element signature="e#16154#16184#0" expanded="false" />
+            <element signature="e#16328#16445#0" expanded="false" />
+            <element signature="e#16338#16368#0" expanded="false" />
+            <element signature="e#16527#16644#0" expanded="false" />
+            <element signature="e#16537#16567#0" expanded="false" />
+            <element signature="e#16715#16832#0" expanded="false" />
+            <element signature="e#16725#16755#0" expanded="false" />
+            <element signature="e#16842#16849#0" expanded="false" />
+            <element signature="e#16900#17252#0" expanded="false" />
+            <element signature="e#16932#17197#0" expanded="false" />
+            <element signature="e#16946#17187#0" expanded="false" />
+            <element signature="e#17050#17173#0" expanded="false" />
+            <element signature="e#17356#20448#0" expanded="false" />
+            <element signature="e#17479#18648#0" expanded="false" />
+            <element signature="e#17513#18572#0" expanded="false" />
+            <element signature="e#17563#18547#0" expanded="false" />
+            <element signature="e#17585#17867#0" expanded="false" />
+            <element signature="e#17761#17845#0" expanded="false" />
+            <element signature="e#17889#18041#0" expanded="false" />
+            <element signature="e#18063#18350#0" expanded="false" />
+            <element signature="e#18239#18328#0" expanded="false" />
+            <element signature="e#18372#18529#0" expanded="false" />
+            <element signature="e#18654#18661#0" expanded="false" />
+            <element signature="e#18700#19087#0" expanded="false" />
+            <element signature="e#18820#19041#0" expanded="false" />
+            <element signature="e#18834#19030#0" expanded="false" />
+            <element signature="e#18926#19016#0" expanded="false" />
+            <element signature="e#19130#19535#0" expanded="false" />
+            <element signature="e#19240#19461#0" expanded="false" />
+            <element signature="e#19254#19450#0" expanded="false" />
+            <element signature="e#19346#19436#0" expanded="false" />
+            <element signature="e#19541#19548#0" expanded="false" />
+            <element signature="e#19579#20431#0" expanded="false" />
+            <element signature="e#19703#19727#0" expanded="false" />
+            <element signature="e#20437#20445#0" expanded="false" />
+            <element signature="e#20450#20549#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/responsive/joeGrid.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="136" column="22" selection-start="4740" selection-end="4740" vertical-scroll-proportion="-10.5">
+          <folding>
+            <element signature="e#69#101#0" expanded="false" />
+            <element signature="e#977#2392#0" expanded="false" />
+            <element signature="e#1223#2382#0" expanded="false" />
+            <element signature="e#1352#2324#0" expanded="false" />
+            <element signature="e#1489#1928#0" expanded="false" />
+            <element signature="e#2016#2072#0" expanded="false" />
+            <element signature="e#2098#2259#0" expanded="false" />
+            <element signature="e#2444#2607#0" expanded="false" />
+            <element signature="tag#div#0" expanded="false" />
+            <element signature="e#2697#4664#0" expanded="false" />
+            <element signature="e#2739#4535#0" expanded="false" />
+            <element signature="tag#div#0;tag#div#0" expanded="false" />
+            <element signature="tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+            <element signature="tag#body#0;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+            <element signature="tag#table#0;tag#body#0;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+            <element signature="tag#thead#0;tag#table#0;tag#body#0;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+            <element signature="tag#tr#0;tag#thead#0;tag#table#0;tag#body#0;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+            <element signature="tag#tbody#0;tag#table#0;tag#body#0;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+            <element signature="e#4591#4648#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/responsive/single.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="52" selection-start="2303" selection-end="2303" vertical-scroll-proportion="-23.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/responsive/post-meta.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="132" selection-start="720" selection-end="720" vertical-scroll-proportion="-15.0">
+        <state line="11" column="30" selection-start="211" selection-end="211" vertical-scroll-proportion="-6.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/responsive/js/globalArrs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="104" column="26" selection-start="3458" selection-end="3458" vertical-scroll-proportion="0.9642432">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/responsive/home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="99" vertical-scroll-proportion="0.0">
+        <state line="41" column="87" selection-start="1264" selection-end="1264" vertical-scroll-proportion="0.3640898">
           <folding />
         </state>
       </provider>

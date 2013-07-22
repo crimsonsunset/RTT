@@ -2972,6 +2972,17 @@ only screen and (min-device-pixel-ratio:1.5) {
 }
 
 /*TODO: Mobile menu stuff*/
+
+@media screen and (max-width: 800px) {
+
+    #logo a:link {
+        float: none;
+        text-align: center;
+    }
+
+    ul.menu a:link {color: #323232 !important;}
+}
+
 @media screen and (max-width: 650px) {
 
     body {}

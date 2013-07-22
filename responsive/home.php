@@ -1,9 +1,7 @@
-<script type="text/javascript" src="/wp-content/themes/responsive/core/js/globalArrs.js"></script>
-
 <?php
 
 // Exit if accessed directly
-if (!defined('ABSPATH')) exit;
+if ( !defined('ABSPATH')) exit;
 
 /**
  * Blog Template
@@ -21,12 +19,12 @@ if (!defined('ABSPATH')) exit;
 
 get_header();
 
-global $more;
-$more = 0;
+global $more; $more = 0;
 ?>
-    <div id="content-blog" class="<?php echo implode(' ', responsive_get_content_classes()); ?>">
 
-        <?php get_template_part('loop-header'); ?>
+    <div id="content-blog" class="<?php echo implode( ' ', responsive_get_content_classes() ); ?>">
+
+        <?php get_template_part( 'loop-header' ); ?>
 
         <?php if (have_posts()) : ?>
 
@@ -34,26 +32,21 @@ $more = 0;
 
                 <?php responsive_entry_before(); ?>
                 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
                     <?php responsive_entry_top(); ?>
+
+                    <?php get_template_part( 'post-meta' ); ?>
+
                     <div class="post-entry">
-                        <div class='rttScoreBox'>Score: <span class="rttScore">4.17</span>
-                        </div>
-                    <?php get_template_part('post-meta'); ?>
-
-
-                        <?php if (has_post_thumbnail()) : ?>
-                            <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+                        <?php if ( has_post_thumbnail()) : ?>
+                            <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
                                 <?php the_post_thumbnail(); ?>
                             </a>
                         <?php endif; ?>
-
                         <?php the_content(__('Read more &#8250;', 'responsive')); ?>
                         <?php wp_link_pages(array('before' => '<div class="pagination">' . __('Pages:', 'responsive'), 'after' => '</div>')); ?>
-                    </div>
-                    <!-- end of .post-entry -->
+                    </div><!-- end of .post-entry -->
 
-                    <?php get_template_part('post-data'); ?>
+                    <?php get_template_part( 'post-data' ); ?>
 
                     <?php responsive_entry_bottom(); ?>
                 </div><!-- end of #post-<?php the_ID(); ?> -->
@@ -62,14 +55,16 @@ $more = 0;
             <?php
             endwhile;
 
-            get_template_part('loop-nav'); else :
+            get_template_part( 'loop-nav' );
 
-            get_template_part('loop-no-posts');
+        else :
+
+            get_template_part( 'loop-no-posts' );
 
         endif;
         ?>
 
     </div><!-- end of #content-blog -->
 
-<?php //get_sidebar(); ?>
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>
